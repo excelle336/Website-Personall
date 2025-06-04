@@ -1,0 +1,221 @@
+*,html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: purple;
+}
+.title {
+    padding: 1%;
+    color: goldenrod;
+    font-size: 30pt;
+}
+nav {
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+}
+
+nav div img {
+width: 50px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: 'Segoe UI', sans-serif;
+    color: grey;
+    font-weight: 600;
+    padding: 8px 0;
+    transition: all;
+    text-decoration: 300ms;
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+}
+
+nav ul li a:hover {
+    color: red;
+    border-bottom: 1px solid red;
+}
+.slider
+{
+    padding: -40;
+    margin-top: 10%;
+    display: block;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 65%;
+}
+
+.slider h4
+{
+    margin-top: 20%;
+}
+
+.slides
+{
+    display: flex;
+    width: 50rem;
+    overflow: hidden;
+}
+
+.slides img 
+{
+    border-radius: 13px;
+    padding: -20%;
+}
+
+.slide
+{
+    width: 50rem;
+    transition: .5s;
+}
+
+.choose_1:checked ~ .slides > .s1
+{
+    margin-left: 5rem;
+}
+.choose_2:checked ~ .slides > .s1
+{
+    margin-left: -50rem ;
+}
+
+.slider
+{
+    padding: -80;
+    margin-top: 10%;
+    display: block;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 65%;
+}
+
+
+
+.overlay 
+{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.overlay:target 
+{
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup 
+{
+    margin: 70px auto;
+    padding: 20px;
+    background: var(--dark-blue);
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+  
+.popup h2 {
+    margin-top: 0;
+    color: var(--white);
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.popup .close:hover 
+{
+    color: #06D85F;
+}
+
+.content 
+{
+    max-height: 30%;
+    width: 50%;
+}
+.title-p {
+    margin-left: 60px;
+    color: white;
+    font-family: system-ui,'Segoe UI',sans-serif;
+}
+.populer {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.populer img {
+    border-radius: 20px;
+}
+ 
+.tentang
+{
+    display: grid;
+    justify-content: center;
+    margin-top: 10%;
+    font-size: 15pt;
+}
+ 
+.card
+{
+    background-color: green;
+    padding: 5%;
+    border-radius: 10px;
+    box-shadow: 20px 20px black;
+}
+ 
+.card h1
+{
+    text-align: center;
+}
+ 
+html
+{
+    scroll-behavior: smooth;
+}
+ 
+ 
+footer
+{
+    display: grid;
+    justify-content: center;
+    background-color: var(--blue);
+    margin-top: 10%;
+    padding: 2%;
+}
+ 
+.sosmed img 
+{
+    width: 50px;
+}
+ 
+#copyright
+{
+    text-align: center;
+    padding: 10px;
+}

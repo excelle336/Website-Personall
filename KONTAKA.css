@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #000;
+    font-family: Arial, sans-serif;
+  }
+  
+  .video-iklan {
+    position: relative;
+    width: 770%;
+    height: 200%;
+    max-width: 800px;
+    margin: 5px auto;
+    overflow: hidden;
+    border-radius: 12px;
+  }
+  
+  video {
+    width: 100%;
+    height: 50%;
+    display: block;
+  }
+  
+  .teks-iklan {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 12px 18px;
+    border-radius: 8px;
+    color: #fff;
+  }
